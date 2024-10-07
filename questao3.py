@@ -1,8 +1,8 @@
-from automaton.automaton_entity import Automaton
+from automaton.automaton_entity import Transdutor
 from automaton.state_vo import State
 from automaton.transition_vo import Transition
 
-transdutor = Automaton()
+transdutor = Transdutor()
 
 # Definir os estados
 q0 = State("q0", is_initial=True, is_final=True)

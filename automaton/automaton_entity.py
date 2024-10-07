@@ -2,7 +2,7 @@ from .state_vo import State
 from .transition_vo import Transition
 
 
-class Automaton:
+class Transdutor:
     initial_state: State | None = None
     final_states: list[State] = []
     current_state: State | None = None
