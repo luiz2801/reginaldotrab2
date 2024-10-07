@@ -38,7 +38,6 @@ class Automata:
         return "NOT ACCEPTED" 
 
 
-#q0 = State("q0", StateType.inicial, {"q1": " "})
 q1 = State("q1", StateType.inicial, {"q2": "c"})
 q2 = State("q2", StateType.middle, {"q3": "o"})
 q3 = State("q3", StateType.middle, {"q4": "m"})
@@ -50,7 +49,6 @@ q8 = State("q8", StateType.middle, {"q9": "d"})
 q9 = State("q9", StateType.middle, {"q10": "o"})
 q10 = State("q10", StateType.middle, {"q11": "r"})
 q11 = State("q11", StateType.final)
-#q12 = State("q2", StateType.final)
 
 all_states = {
     "q1": q1, "q2": q2, "q3": q3, "q4": q4, "q5": q5, "q6": q6, "q7": q7, "q8": q8, "q9": q9, "q10": q10, "q11": q11
@@ -67,15 +65,6 @@ all_strings = re.split(r"(\s)", text)
 
 automata = Automata(all_states)
 position = 0
-
-# for current_string in all_strings:
-#     teste = automata.make_transition(q1, current_string)
-#     position += len(current_string)
-#     if teste != 0:
-#         print(current_string)
-#         print(position)
-
-
 
 all_strings = re.split(r"(\s)", text)
 
